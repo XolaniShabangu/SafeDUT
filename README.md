@@ -62,7 +62,7 @@ With multiple DUT campuses and increasing concerns about safety, SafeDUT provide
 - **Platform:** Android
 - **IDE:** Android Studio
 - **Language:** Java / Kotlin
-- **Database:** Firebase / SQLite
+- **Database:** Firebase 
 - **AI:** NLP-based Chatbot
 
 ---
