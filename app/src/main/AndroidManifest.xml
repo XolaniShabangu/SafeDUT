@@ -16,13 +16,7 @@
     <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
     <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
     <uses-permission android:name="android.permission.CAMERA"/>
-    <!-- Android 12 and below -->
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-
-
-
-
-
 
 
 
@@ -39,8 +33,6 @@
         <activity android:name=".AlertMapActivity" />
 
         <receiver android:name=".GeofenceBroadcastReceiver" android:exported="true"/>
-
-
         <activity
             android:name=".SplashActivity"
             android:exported="true">
@@ -64,8 +56,6 @@
             android:label="Lockdown Protocols"/>
         <activity android:name=".ChatWithAIActivity" />
 
-
-
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key"/>
@@ -73,17 +63,6 @@
         <service
             android:name=".LockdownListenerService"
             android:exported="true" />
-
-
-
-
-
-
-
-
-
-
-
 
     </application>
 
