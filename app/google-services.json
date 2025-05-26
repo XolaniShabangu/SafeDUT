@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "837002343122",
+    "project_id": "safedut",
+    "storage_bucket": "safedut.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:837002343122:android:e118e8b5976c31b065b30b",
+        "android_client_info": {
+          "package_name": "com.example.safedut"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3dSIBQ3qqudAXUAre_k3To4P4pAItCMs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

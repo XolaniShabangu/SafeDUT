@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#f4f6f9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#ffffff"
+        android:elevation="2dp"
+        android:layout_marginBottom="16dp">
+
+        <!-- Header -->
+        <TextView
+            android:id="@+id/tvLockdownHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Manage Lockdown Protocols"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#212121"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Active Lockdown Section -->
+        <LinearLayout
+            android:id="@+id/activeLockdownSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:background="#DDDDDD"
+            android:visibility="gone">
+
+
+        <TextView
+                android:id="@+id/tvActiveLockdownTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Active Lockdown: Shooter on Campus"
+                android:textStyle="bold"
+                android:textColor="#212121"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/tvActiveLockdownInstructions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Stay indoors and lock all doors."
+                android:layout_marginBottom="8dp"
+                android:textColor="#333333"
+                android:textSize="14sp"/>
+
+            <Button
+                android:id="@+id/btnDeactivateLockdown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⏹️Deactivate Lockdown"
+                android:backgroundTint="#C2185B"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC"
+            android:layout_marginVertical="16dp" />
+
+        <!-- New Lockdown Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create New Lockdown"
+            android:textColor="#212121"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Title -->
+        <EditText
+            android:id="@+id/etLockdownTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#757575"
+            android:hint="Lockdown Title (e.g., Active Shooter)"
+            android:textColor="#212121"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Campus -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#212121"
+            android:text="Select Campus"
+            android:layout_marginBottom="4dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerLockdownCampus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#757575"
+            android:textColor="#212121"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Severity -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:textColor="#212121"
+            android:text="Select Severity" />
+
+        <Spinner
+            android:id="@+id/spinnerLockdownSeverity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#212121"
+            android:textColorHint="#757575"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Instructions -->
+        <EditText
+            android:id="@+id/etLockdownInstructions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Lockdown Instructions"
+            android:inputType="textMultiLine"
+            android:textColorHint="#757575"
+            android:textColor="#212121"
+            android:minLines="3"
+            android:gravity="top"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Create Button -->
+        <Button
+            android:id="@+id/btnCreateLockdown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Initiate Lockdown!"
+            android:backgroundTint="#D32F2F"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+</ScrollView>
